@@ -1,0 +1,98 @@
+:root {
+  --primary-lightCyan: hsl(193, 38%, 86%);
+  --primary-neonGreen: hsl(150, 100%, 66%);
+
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+
+  --fweight-bold: 800;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: var(--darkBlue);
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkGrayishBlue);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  color: var(--primary-neonGreen);
+  margin-bottom: 0;
+}
+
+.textAdvice {
+  font-size: 28px;
+  color: var(--primary-lightCyan);
+  margin-top: 0;
+  font-weight: var(--fweight-bold);
+  text-align: center;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 30px 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-neonGreen);
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+.dice:hover {
+  box-shadow: 0 0 7px 5px var(--primary-neonGreen);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 20px;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: var(--primary-lightCyan);
+}
+
+@media only screen and (max-width: 480px) {
+  article {
+    max-width: 340px;
+    margin: 0 10px;
+  }
+}
